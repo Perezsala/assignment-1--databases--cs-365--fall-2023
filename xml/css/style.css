@@ -1,0 +1,132 @@
+/* Style the students element (the whole XML document) */
+students {
+    font-family: Courier, monospace;
+    margin: 15px;
+    padding: 1px;
+}
+
+
+
+/* Style headers (e.g., first name, last name) */
+student > firstname, student > lastname,student > studentid {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a426e4;
+}
+
+
+student:before {
+    content: "Student Info: " ;
+    display: block;
+    font-weight: bold;
+    color: #b31010;
+    font-size: 22px;
+    
+}
+
+
+/* Add a border to student information*/
+student{
+    border: 1px solid #38aece; /* You can adjust the border width and color */
+    padding: 2px; /* Add padding for better appearance */
+    display: inline-block; /* Ensure the border wraps around the content */
+}
+
+
+
+firstname, 
+middlename, 
+lastname, 
+preferredname, 
+email, 
+phone, 
+yearstatus, 
+gpa, 
+major, 
+minor, 
+enrollmentstatus, 
+advisor, 
+enrollmentdate, 
+graduationdate,
+studentid
+
+{
+    display: block;
+    margin: 1.0em 0;
+}
+
+firstname::before {
+    content: "First Name: ";
+    font-weight: bold;
+}
+
+middlename::before {
+    content: "Middle Name: ";
+    font-weight: bold;
+}
+
+lastname::before {
+    content: "Last Name: ";
+    font-weight: bold;
+}
+
+preferredname::before {
+    content: "Preferred Name: ";
+    font-weight: bold;
+}
+
+email::before {
+    content: "Email: ";
+    font-weight: bold;
+}
+
+phone::before {
+    content: "Phone: ";
+    font-weight: bold;
+}
+
+studentid::before {
+    content: "StudentID: ";
+    font-weight: bold;
+}
+
+yearstatus::before {
+    content: "Year Status: ";
+    font-weight: bold;
+}
+
+gpa::before {
+    content: "GPA: ";
+    font-weight: bold;
+}
+
+major::before {
+    content: "Major: ";
+    font-weight: bold;
+}
+
+minor::before {
+    content: "Minor: ";
+    font-weight: bold;
+}
+
+enrollmentstatus::before {
+    content: "Enrollment Status: ";
+    font-weight: bold;
+}
+
+advisor::before {
+    content: "Advisor: ";
+    font-weight: bold;
+}
+
+enrollmentdate::before {
+    content: "Initial Enrollment Date: ";
+    font-weight: bold;
+}
+
+graduationdate::before {
+    content: "Graduation Date: ";
+    font-weight: bold;
+
+}

@@ -1,0 +1,50 @@
+<!-- Define the root element 'students' -->
+<!ELEMENT students (student*)>
+
+<!-- Define the 'student' element with various child elements -->
+<!ELEMENT student (firstname, middlename*, lastname, preferredname, studentid, email, phone, yearstatus, gpa, major, minor, enrollmentstatus, advisor, enrollmentdate, graduationdate)>
+
+<!-- Define 'firstname' element for first name -->
+<!ELEMENT firstname (#PCDATA)> 
+
+<!-- Define 'middlename' element for middle name (optional) -->
+<!ELEMENT middlename (#PCDATA)>
+
+<!-- Define 'lastname' element for last name -->
+<!ELEMENT lastname (#PCDATA)>
+
+<!-- Define 'preferredname' element for preferred name -->
+<!ELEMENT preferredname (#PCDATA)>
+
+<!-- Define 'studentid' element for student ID -->
+<!ELEMENT studentid (#PCDATA)>
+
+<!-- Define 'email' element for email address -->
+<!ELEMENT email (#PCDATA)>
+
+<!-- Define 'phone' element for phone number -->
+<!ELEMENT phone (#PCDATA)>
+
+<!-- Define 'yearstatus' element for student's year status -->
+<!ELEMENT yearstatus (#PCDATA)>
+
+<!-- Define 'gpa' element for student's GPA -->
+<!ELEMENT gpa (#PCDATA)>
+
+<!-- Define 'major' element for student's major -->
+<!ELEMENT major (#PCDATA)>
+
+<!-- Define 'minor' element for student's minor -->
+<!ELEMENT minor (#PCDATA)>
+
+<!-- Define 'enrollmentstatus' element for enrollment status -->
+<!ELEMENT enrollmentstatus (#PCDATA)> 
+
+<!-- Define 'advisor' element for student's advisor -->
+<!ELEMENT advisor (#PCDATA)>
+
+<!-- Define 'enrollmentdate' element for initial enrollment date -->
+<!ELEMENT enrollmentdate (#PCDATA)>
+
+<!-- Define 'graduationdate' element for graduation date -->
+<!ELEMENT graduationdate (#PCDATA)>
